@@ -96,6 +96,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-middleright{position:absolute;top:50%;left:60%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
 .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
@@ -229,3 +230,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+
+.w3-header{position: fixed;left: 0;top: 0;width: 100%;}
+.w3-footer{position: fixed;left: 0;bottom: 0;width: 100%;}
+.w3-right-menu{fill-opacity: 70%;position: fixed;right: 0;bottom: 20%;width: 3%;min-width:50px;height: 60%;color: white;text-align: center;}
+.w3-left-menu{position: fixed;left: 0;bottom: 20%;width: 3%;min-width:50px;height: 60%;color: white;text-align: center;}
+
+.w3-round-large-left{border-top-right-radius:8px;border-bottom-right-radius:8px}
+.w3-round-large-right{border-top-left-radius:8px;border-bottom-left-radius:8px}
+.w3-hover-menu-opacity:hover{opacity:1}
+
+.w3-mindsumo-header{background-color:#43c593}
+.w3-mindsumo-footer{background-color:#379b75}
+.w3-mindsumo-menu{background-color:#3c3f3e}
+.w3-mindsumo-color{background-color:#43c593}
+.w3-mindsumo-grad-color{background-image: linear-gradient(to right, #f0f3f2, rgb(175, 177, 177))}
+.w3-mindsumo-grad-background{background-image: linear-gradient( #56f0b5,#349670)}
+
+.w3-mindsumo-tag{width:120px;opacity: .8;background-color: #4b4b49}
+.w3-smallbox{cursor:pointer}
