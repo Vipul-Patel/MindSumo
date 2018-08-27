@@ -234,8 +234,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-header{position: fixed;left: 0;top: 0;width: 100%;}
 .w3-footer{position: fixed;left: 0;bottom: 0;width: 100%;}
-.w3-right-menu{fill-opacity: 70%;position: fixed;right: 0;bottom: 20%;width: 3%;min-width:50px;height: 60%;color: white;text-align: center;}
-.w3-left-menu{position: fixed;left: 0;bottom: 20%;width: 3%;min-width:50px;height: 60%;color: white;text-align: center;}
+.w3-right-menu{fill-opacity: 70%;right: 0;bottom:40%;width: 3%;min-width:50px;height: 40%;color: white;text-align: center;}
+.w3-left-menu{left: 0;bottom: 40%;width: 3%;min-width:50px;height: 40%;color: white;text-align: center;}
 
 .w3-round-large-left{border-top-right-radius:8px;border-bottom-right-radius:8px}
 .w3-round-large-right{border-top-left-radius:8px;border-bottom-left-radius:8px}
@@ -250,3 +250,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-mindsumo-tag{width:120px;opacity: .8;background-color: #4b4b49}
 .w3-smallbox{cursor:pointer}
+.w3-a:hover{cursor:pointer;transition: all 200ms ease-out;box-shadow: 0 0 30px #18b87b;}
+
+.sticky{position: sticky}

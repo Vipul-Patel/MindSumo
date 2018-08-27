@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 <title>MindSumo Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./w3css.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./w3css.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="./JavaScript.js"></script>
+
 <body class="w" style="background-color:#f5f1f1">
 
 <!-- This is left side bar menu       -->
-<div class="w3-sidebar w3-left-menu w3-card-4 w3-mindsumo-menu w3-round-large-left w3-opacity w3-hover-menu-opacity" >
-      <p>Home</p>
+<div id="navbar" class="w3-sidebar w3-left-menu w3-card-4 w3-mindsumo-menu w3-round-large-left w3-opacity w3-hover-menu-opacity">
+            <i class="w3-xxlarge w3-padding-16 fa fa-home"></i>
+            <i class="w3-xxlarge w3-padding-16 fa fa-search"></i>
+            <i class="w3-xxlarge w3-padding-16 fa fa-cloud"></i>
+            <div class="w3-xxlarge w3-hover-dark-grey fa fa-trash"></div>
 </div>
 
 <!-- This is right side bar menu       -->
-<div class="w3-sidebar w3-right-menu w3-card-4 w3-mindsumo-menu w3-round-large-right w3-opacity w3-hover-menu-opacity">
-      <p>Profile</p>
+<div id="navbar" class="w3-sidebar w3-right-menu w3-card-4 w3-mindsumo-menu w3-round-large-right w3-opacity w3-hover-menu-opacity">
+      <i class="w3-xxlarge w3-padding-16 fa fa-bars"></i>
+            <i class="w3-xxlarge w3-padding-16 fa fa-plane"></i>
+            <i class="w3-xxlarge w3-padding-16 fa fa-refresh"></i>
+            <div class="w3-xxlarge w3-hover-dark-grey fa fa-male"></div>
 </div>
 
 <!-- This is Header       -->
-<div class="w3-container w3-mindsumo-header w3-center w3-text-white">
+<div class="w3-container w3-mindsumo-header w3-center w3-text-white" style="width:100%">
       <h2>MindSumo</h2>
 </div>
 
 <!-- This is page content -->
-<div class="w3-content w3-padding">
+<div class="w3-content w3-padding"  style="margin-left:10%;margin-right:10%">
 
       <!-- <div class="w3-container">
             <div class="w3-card-4 w3-red">
@@ -35,57 +44,66 @@
             <p>Filter by challenges!</p>
       </div>
 
-      <div class="w3-row-padding">
-            <div class="w3-col l12 m6 w3-margin-bottom">
-                  <div class="w3-card-4 w3-smallbox" style="min-width:700px">      
-                        <div class="w3-display-container w3-red">
-                              <div class="w3-tag w3-display-topright w3-mindsumo-tag w3-round-large-right">ENGINEERING</div>
-                              <div class="w3-image"><img src="./Puzzle.jpg" style="width:30%"></div>
-                              <div class="w3-display-middleright">How can we better control mass air flow in rotating machinery? </p></div>
-                        </div>      
-                  </div>
-            </div>            
-      </div>
-
-      <div class="w3-row-padding">
-            <div class="w3-col l12 m6 w3-margin-bottom">
-                  <div class="w3-card-4" style="min-width:700px">      
-                        <div class="w3-display-container w3-blue">
-                              <div class="w3-tag w3-display-topright w3-white w3-tag-width">Business</div>
-                              <div class="w3-image"><img src="./Puzzle.jpg" style="width:30%"></div>
-                              <div class="w3-display-middleright">How can we better control mass air flow in rotating machinery? </p></div>
-                        </div>      
+      <div class="w3-card-4 w3-margin w3-red w3-a">
+            <div class="w3-display-container">
+                  <div class="w3-tag w3-card-4 w3-display-topright w3-mindsumo-tag w3-round-large-right">ENGINEERING</div>
+                  <div class="w3-row" >
+                        <div class="w3-quarter w3-left">
+                              <img src="./Puzzle.jpg" alt="sun" style="width:100%">
+                        </div>
+                        <div class="w3-threequarter w3-right" style="margin-top:30px;padding-left:10px">
+                              <h3>How can we better control mass air flow in rotating machinery?</h3> 
+                        </div>
                   </div>
             </div>
       </div>
 
-      <div class="w3-row-padding">
-            <div class="w3-col l12 m6 w3-margin-bottom">
-                  <div class="w3-card-4" style="min-width:700px">      
-                        <div class="w3-display-container w3-lime">
-                              <div class="w3-tag w3-display-topright w3-white w3-tag-width">Engineering</div>
-                              <div class="w3-image"><img src="./Puzzle.jpg" style="width:30%"></div>
-                              <div class="w3-display-middleright">How can we better control mass air flow in rotating machinery? </p></div>
-                        </div>      
-                  </div>
-            </div>            
-      </div>
-      
-      <div class="w3-row-padding">
-            <div class="w3-col l12 m6 w3-margin-bottom">
-                  <div class="w3-card-4" style="min-width:700px">      
-                        <div class="w3-display-container w3-pink">
-                              <div class="w3-tag w3-display-topright w3-white w3-tag-width">Business</div>
-                              <div class="w3-image"><img src="./Puzzle.jpg" style="width:30%"></div>
-                              <div class="w3-display-middleright">How can we better control mass air flow in rotating machinery? </p></div>
-                        </div>      
+      <div class="w3-card-4 w3-margin w3-blue  w3-a">
+            <div class="w3-display-container">
+                  <div class="w3-tag w3-card-4 w3-display-topright w3-mindsumo-tag w3-round-large-right">BUSINESS</div>
+                  <div class="w3-row" >
+                        <div class="w3-quarter w3-left">
+                              <img src="./QS.jpg" alt="sun" style="width:100%">
+                        </div>
+                        <div class="w3-threequarter w3-right" style="margin-top:30px;padding-left:10px">
+                              <h3>ACTIVITY CHALLENGE: Win a prize if you are in the first 64 to complete it!</h3> 
+                        </div>
                   </div>
             </div>
       </div>
+
+      <div class="w3-card-4 w3-margin w3-brown w3-a">
+            <div class="w3-display-container">
+                  <div class="w3-tag w3-card-4 w3-display-topright w3-mindsumo-tag w3-round-large-right">FOOD SCIENCE</div>
+                  <div class="w3-row" >
+                        <div class="w3-quarter w3-left">
+                              <img src="./spray.jpg" alt="sun" style="width:100%">
+                        </div>
+                        <div class="w3-threequarter w3-right" style="margin-top:30px;padding-left:10px">
+                              <h3>What's your revolutionary idea for updating provider information? </h3> 
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="w3-card-4 w3-margin w3-purple  w3-a">
+            <div class="w3-display-container">
+                  <div class="w3-tag w3-card-4 w3-display-topright w3-mindsumo-tag w3-round-large-right">COMPUTER SCIENCE</div>
+                  <div class="w3-row" >
+                        <div class="w3-quarter w3-left">
+                              <img src="./lebron.jpg" alt="sun" style="width:100%">
+                        </div>
+                        <div class="w3-threequarter w3-right" style="margin-top:30px;padding-left:10px">
+                              <h3>How would you improve our customer experience? </h3> 
+                        </div>
+                  </div>
+            </div>
+      </div>
+
 </div>
 
 <!-- This is footer -->
-<div class="w3-container w3-mindsumo-footer w3-center" style="height:500px">
+<div id="footer" class="w3-container w3-mindsumo-footer w3-center w3-text-white" style="height:500px" style="width:100%">
       <div class="w3-content w3-padding">
             <h1>This is footer.</h1>
       </div>
