@@ -3,269 +3,293 @@
 <title>MindSumo Template</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <!-- User links -->
       <link rel="stylesheet" href="./CSS/w3css.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
       <script src="./JavaScript.js"></script>
 
-<body class="w" style="background-color:#f5f1f1">
+      <!-- TP links -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 
-<!-- This is Header       -->
+<body class="w" style="background-color:#f5f1f1" ng-app="">
+
+<!-- This is Header -->
 <div class="w3-container w3-mindsumo-header w3-center w3-text-white" style="width:100%">
       <h2>MindSumo</h2>
 </div>
 
-<!-- This is page content -->
-<div class="w3-content w3-padding" >
-
-      <div class="w3-container">
-            <p>Filter by challenges!</p>
-      </div>
-
-    
-      <div class="w3-a w3-card-4">
-            <div class="w3-row w3-brown">
-                  <div class="w3-quarter w3-left">
-                        <img src="./Images/Puzzle.jpg" alt="sun" style="width:100%">
-                  </div>
-                  <div class="w3-threequarter w3-row w3-display-container">
-                        <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
-                              ENGINEERING
-                        </div>
-                        <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
-                              <span class="w3-google-font">
-                                    How can we better control mass air flow in rotating machinery?
-                              </span> 
-                              <br/>
-                              <br/>
-                              <div class="w3-container">
-                                    <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
-                                    <span>
-                                          Anonymous Financial Services
-                                    </span>
-                              </div>
-                        </div>
-            <!-- comment -->
-                        <div class="w3-quarter w3-center" style="margin-top:30px;">
-                              <div class="w3-tag w3-round-large w3-sand w3-card">
-                                    <span class="w3-large">
-                                          $1600
-                                    <br>
-                                          <span class="w3-small">
-                                                Top 50%
-                                          </span>
-                                    </span>
-                              </div>
-                              <div class="w3-panel" style="margin-bottom:3px">
-                                    <span class="w3-tag w3-padding w3-round-large w3-deep-orange w3-center w3-card">
-                                          <span class="w3-large">
-                                                4
-                                          </span>
-                                                Days Left
-                                    </span>
-                              </div>
-                        </div> 
-                  </div>
+<div class="w3-row w3-padding">
+      <!-- These are filters -->
+      <div class="w3-container w3-col w3-card-4 w3-round-medium" style="width:250px;background-color: #3e4041;color: white">
+            <p class="w3-google-font">Filter by challenges</p>
+            <div class="w3-panel">
+                  <label class="container">
+                        ENGINEERING: <input type="checkbox" ng-model="Engg" ng-init="Engg=true"><span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="w3-panel">
+                  <label class="container">
+                        BUSINESS: <input type="checkbox" ng-model="Busi" ng-init="Busi=true"><span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="w3-panel">
+                  <label class="container">
+                        FOOD SCIENCE: <input type="checkbox" ng-model="FoSc" ng-init="FoSc=true"><span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="w3-panel">
+                  <label class="container">
+                        COMPUTER SCIENCE: <input type="checkbox" ng-model="CoSc" ng-init="CoSc=true"><span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="w3-panel">
+                  <label class="container">
+                        MATH & SCIENCES: <input type="checkbox" ng-model="MaSc" ng-init="MaSc=true"><span class="checkmark"></span>
+                  </label>
+            </div>
+            <div class="w3-panel">
+                  <label class="container">
+                        HUMANITIES & ART: <input type="checkbox" ng-model="HuAr" ng-init="HuAr=true"><span class="checkmark"></span>
+                  </label>
             </div>
       </div>
-      
-<br>
 
-<div class="w3-a w3-card-4">
-            <div class="w3-row w3-brown">
-                  <div class="w3-quarter w3-left">
-                        <img src="./Images/QS.jpg" alt="sun" style="width:100%">
-                  </div>
-                  <div class="w3-threequarter w3-row w3-display-container">
-                        <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
-                              BUSINESS
+      <!-- This is page content -->
+      <div class="w3-content w3-rest w3-padding" style="min-width: 70%">
+      
+            <div class="w3-a w3-card-4" ng-show="Engg">
+                  <div class="w3-row w3-brown">
+                        <div class="w3-quarter w3-left">
+                              <img src="./Images/Puzzle.jpg" alt="sun" style="width:100%">
                         </div>
-                        <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
-                              <span class="w3-google-font">
-                                    ACTIVITY CHALLENGE: Win a prize if you are in the first 64 to complete it!
-                              </span> 
-                              <br/>
-                              <br/>
-                              <div class="w3-container">
-                                    <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
-                                    <span>
-                                          Anonymous Financial Services
-                                    </span>
+                        <div class="w3-threequarter w3-row w3-display-container">
+                              <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
+                                    ENGINEERING
                               </div>
+                              <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
+                                    <span class="w3-google-font">
+                                          How can we better control mass air flow in rotating machinery?
+                                    </span> 
+                                    <br/>
+                                    <br/>
+                                    <div class="w3-container">
+                                          <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
+                                          <span>
+                                                Anonymous Financial Services
+                                          </span>
+                                    </div>
+                              </div>
+                  <!-- comment -->
+                              <div class="w3-quarter w3-center" style="margin-top:50px;">
+                                    <div class="w3-small">
+                                          <span class="w3-tag w3-xlarge w3-card w3-sand w3-round-large">
+                                                $1600
+                                          </span>
+                                          Top 50%
+                                    </div>
+                                    <div class="w3-panel" style="margin-bottom:3px">
+                                          <span class="w3-padding">
+                                                      <span class="w3-tag w3-medium w3-deep-orange w3-card">
+                                                      8
+                                                </span>
+                                                      Days Left            
+                                          </span>
+                                          
+                                    </div>
+                              </div> 
                         </div>
-            <!-- comment -->
-                        <div class="w3-quarter w3-center" style="margin-top:15px;">
-                              <div class="w3-panel">
-                                    <span class="w3-tag w3-padding w3-round-large w3-pale-red w3-center w3-card">
-                                          <span class="w3-large">
-                                                14
-                                          </span>
-                                                Days Left
-                                    </span>
-                              </div>
-                              <div class="w3-tag w3-round-large w3-sand w3-card" style="margin-bottom:3px">
-                                    <span class="w3-large">
-                                          $2500
-                                    <br>
-                                          <span class="w3-small">
-                                                Top 50%
-                                          </span>
-                                    </span>
-                              </div>
-                        </div> 
                   </div>
             </div>
-      </div>
-      
-<br>
+           
+            <br>
 
-
-<div class="w3-a w3-card-4">
-            <div class="w3-row w3-brown">
-                  <div class="w3-quarter w3-left">
-                        <img src="./Images/Cleaning.jpg" alt="sun" style="width:100%">
-                  </div>
-                  <div class="w3-threequarter w3-row w3-display-container">
-                        <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
-                              FOOD SCIENCE
-                        </div>
-                        <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
-                              <span class="w3-google-font">
-                                    What's your revolutionary idea for updating provider information?
-                              </span> 
-                              <br/>
-                              <br/>
-                              <div class="w3-container">
-                                    <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
-                                    <span>
-                                          Anonymous Financial Services
-                                    </span>
+            <div class="w3-a w3-card-4" ng-show="Busi">
+                        <div class="w3-row w3-brown">
+                              <div class="w3-quarter w3-left">
+                                    <img src="./Images/QS.jpg" alt="sun" style="width:100%">
                               </div>
-                        </div>
-            <!-- comment -->
-                        <div class="w3-quarter w3-center" style="margin-top:15px;">
-                              <div class="w3-panel">
-                                    <span class="w3-tag w3-padding w3-round-large w3-red w3-center w3-card">
-                                          <span class="w3-large">
-                                                15
-                                          </span>
-                                                Hours Left
-                                    </span>
-                              </div>
-                              <div class="w3-tag w3-round-large w3-sand w3-card" style="margin-bottom:3px">
-                                    <span class="w3-large">
-                                          $1600
-                                    <br>
-                                          <span class="w3-small">
+                              <div class="w3-threequarter w3-row w3-display-container">
+                                    <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
+                                          BUSINESS
+                                    </div>
+                                    <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
+                                          <span class="w3-google-font">
+                                                ACTIVITY CHALLENGE: Win a prize if you are in the first 64 to complete it!
+                                          </span> 
+                                          <br/>
+                                          <br/>
+                                          <div class="w3-container">
+                                                <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
+                                                <span>
+                                                      Anonymous Financial Services
+                                                </span>
+                                          </div>
+                                    </div>
+                        <!-- comment -->
+                                    <div class="w3-quarter w3-center" style="margin-top:50px;">
+                                          <div class="w3-small">
+                                                <span class="w3-tag w3-xlarge w3-card w3-sand w3-round-large">
+                                                      $2500
+                                                </span>
                                                 Top 50%
-                                          </span>
-                                    </span>
-                              </div>
-                        </div> 
-                  </div>
-            </div>
-      </div>
-      
-<br>
-
-
-<div class="w3-a w3-card-4">
-            <div class="w3-row w3-brown">
-                  <div class="w3-quarter w3-left">
-                        <img src="./Images/Bank.jpg" alt="sun" style="width:100%">
-                  </div>
-                  <div class="w3-threequarter w3-row w3-display-container">
-                        <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
-                              COMPUTER SCIENCE
-                        </div>
-                        <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
-                              <span class="w3-google-font">
-                                    How would you improve our customer experience? 
-                              </span> 
-                              <br/>
-                              <br/>
-                              <div class="w3-container">
-                                    <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
-                                    <span>
-                                          Anonymous Financial Services
-                                    </span>
+                                          </div>
+                                          <div class="w3-panel w3-small" style="margin-bottom:3px">
+                                                <span class="w3-padding">
+                                                            <span class="w3-tag w3-medium w3-pale-red w3-card">
+                                                            14
+                                                      </span>
+                                                            Days Left            
+                                                </span>
+                                          </div>
+                                    </div>  
                               </div>
                         </div>
-            <!-- comment -->
-                        <div class="w3-quarter w3-center" style="margin-top:15px;">
-                              <div class="w3-panel">
-                                    <span class="w3-tag w3-padding w3-round-large w3-green w3-center w3-card">
-                                          <span class="w3-large">
-                                                30
-                                          </span>
-                                                Days Left
-                                    </span>
+                  </div>
+                  
+            <br>
+
+
+            <div class="w3-a w3-card-4" ng-show="FoSc">
+                        <div class="w3-row w3-brown">
+                              <div class="w3-quarter w3-left">
+                                    <img src="./Images/Cleaning.jpg" alt="sun" style="width:100%">
                               </div>
-                              <div class="w3-tag w3-round-large w3-sand w3-card" style="margin-bottom:3px">
-                                    <span class="w3-large">
-                                          $800
-                                    <br>
-                                          <span class="w3-small">
+                              <div class="w3-threequarter w3-row w3-display-container">
+                                    <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
+                                          FOOD SCIENCE
+                                    </div>
+                                    <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
+                                          <span class="w3-google-font">
+                                                What's your revolutionary idea for updating provider information?
+                                          </span> 
+                                          <br/>
+                                          <br/>
+                                          <div class="w3-container">
+                                                <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
+                                                <span>
+                                                      Anonymous Financial Services
+                                                </span>
+                                          </div>
+                                    </div>
+                                    <!-- comment -->
+                                    <div class="w3-quarter w3-center" style="margin-top:50px;">
+                                          <div class="w3-small">
+                                                <span class="w3-tag w3-xlarge w3-card w3-sand w3-round-large">
+                                                      $1600
+                                                </span>
+                                                Top 50%
+                                          </div>
+                                          <div class="w3-panel w3-small" style="margin-bottom:3px">
+                                                <span class="w3-padding">
+                                                            <span class="w3-tag w3-medium w3-red w3-card">
+                                                            15
+                                                      </span>
+                                                            Hours Left            
+                                                </span>
+                                          </div>
+                                    </div> 
+                              </div>
+                        </div>
+                  </div>
+                  
+            <br>
+
+
+            <div class="w3-a w3-card-4" ng-show="CoSc">
+                        <div class="w3-row w3-brown">
+                              <div class="w3-quarter w3-left">
+                                    <img src="./Images/Bank.jpg" alt="sun" style="width:100%">
+                              </div>
+                              <div class="w3-threequarter w3-row w3-display-container">
+                                    <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
+                                          COMPUTER SCIENCE
+                                    </div>
+                                    <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
+                                          <span class="w3-google-font">
+                                                How would you improve our customer experience? 
+                                          </span> 
+                                          <br/>
+                                          <br/>
+                                          <div class="w3-container">
+                                                <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
+                                                <span>
+                                                      Anonymous Financial Services
+                                                </span>
+                                          </div>
+                                    </div>
+                                    <!-- comment -->
+                                    <div class="w3-quarter w3-center" style="margin-top:50px;">
+                                          <div class="w3-small">
+                                                <span class="w3-tag w3-xlarge w3-card w3-sand w3-round-large">
+                                                      $800
+                                                </span>
                                                 First 80
-                                          </span>
-                                    </span>
-                              </div>
-                        </div> 
-                  </div>
-            </div>
-      </div>
-      
-<br>
-
-
-<div class="w3-a w3-card-4">
-            <div class="w3-row w3-brown">
-                  <div class="w3-quarter w3-left">
-                        <img src="./Images/drill.jpg" alt="sun" style="width:100%">
-                  </div>
-                  <div class="w3-threequarter w3-row w3-display-container">
-                        <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
-                              ENGINEERING
-                        </div>
-                        <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
-                              <span class="w3-google-font">
-                                    What's your design for a drilling robot that can navigate tunnels? 
-                              </span> 
-                              <br/>
-                              <br/>
-                              <div class="w3-container">
-                                    <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
-                                    <span>
-                                          Anonymous Financial Services
-                                    </span>
+                                          </div>
+                                          <div class="w3-panel w3-small" style="margin-bottom:3px">
+                                                <span class="w3-padding">
+                                                            <span class="w3-tag w3-medium w3-green w3-card">
+                                                            30
+                                                      </span>
+                                                            Days Left            
+                                                </span>
+                                          </div>
+                                    </div>
                               </div>
                         </div>
-            <!-- comment -->
-                        <div class="w3-quarter w3-center" style="margin-top:15px;">
-                              <div class="w3-panel">
-                                    <span class="w3-tag w3-padding w3-round-large w3-grey w3-center w3-card">
-                                          <span class="w3-large">
-                                                DONE
-                                          </span><br>
-                                          5 Days ago
-                                    </span>
-                              </div>
-                              <div class="w3-tag w3-round-large w3-sand w3-card" style="margin-bottom:3px">
-                                    <span class="w3-large">
-                                          $5000
-                                    <br>
-                                          <span class="w3-small">
-                                                Top 50%
-                                          </span>
-                                    </span>
-                              </div>
-                        </div> 
                   </div>
-            </div>
-      </div>
-      
-<br>
+                  
+            <br>
 
+
+            <div class="w3-a w3-card-4" ng-show="Engg">
+                        <div class="w3-row w3-brown">
+                              <div class="w3-quarter w3-left">
+                                    <img src="./Images/drill.jpg" alt="sun" style="width:100%">
+                              </div>
+                              <div class="w3-threequarter w3-row w3-display-container">
+                                    <div class="w3-tag w3-card-4 signpost w3-orange w3-display-topright" id="engg">
+                                          ENGINEERING
+                                    </div>
+                                    <div class="w3-threequarter w3-container w3-display-container w3-top-margin w3-contentmargin-top">
+                                          <span class="w3-google-font">
+                                                What's your design for a drilling robot that can navigate tunnels? 
+                                          </span> 
+                                          <br/>
+                                          <br/>
+                                          <div class="w3-container">
+                                                <img src="./Images/avatar.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px">
+                                                <span>
+                                                      Anonymous Financial Services
+                                                </span>
+                                          </div>
+                                    </div>
+                                    <!-- comment -->
+                                    <div class="w3-quarter w3-center" style="margin-top:50px;">
+                                          <div class="w3-small">
+                                                <span class="w3-tag w3-xlarge w3-card w3-sand w3-round-large">
+                                                      $5000
+                                                </span>
+                                                Top 10
+                                          </div>
+                                          <div class="w3-panel w3-small" style="margin-bottom:3px">
+                                                <span class="w3-padding">
+                                                      <span class="w3-tag w3-medium w3-grey w3-card">
+                                                            DONE
+                                                      </span>
+                                                      5 Days Ago
+                                                </span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  
+            <br>
+
+      </div>
 </div>
 
 <!-- This is footer -->
